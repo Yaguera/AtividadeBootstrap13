@@ -1,0 +1,88 @@
+body{
+    color: #fff;
+}
+
+.nav-item a{
+    color: #fff;
+}
+
+.nav-item a:hover{
+    color: #a6a5a5;
+}
+
+header{
+    background-image: linear-gradient(to right, #0D0D34,#183457);
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.carousel-item img{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-overlay .btn {
+    width: 90%;
+}
+
+.card{
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item img{
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card{
+    height: 500px;
+    width: 100%;
+}
+
+.card,
+article img,
+.card-img-overlay{
+    border-radius: 50px;
+}
+
+section{
+    height: 100vh;
+}
+
+section::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('https://img.freepik.com/fotos-gratis/lindo-ceu-noturno-com-estrelas-brilhantes_53876-16414.jpg?w=740&t=st=1698172231~exp=1698172831~hmac=ae3e67bf6f0130b9c1f0cfdc03f666a86c9533fc9b3cfbecf59365ed65840d9f');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .row{
+    padding-top: 30px;
+}
