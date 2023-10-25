@@ -38,8 +38,19 @@ header{
     width: 90%;
 }
 
+#cards{
+    justify-content: center;
+}
+
 .card{
     height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.card:hover{
+    scale: 1.01;
 }
 
 .card img {
@@ -47,6 +58,10 @@ header{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.col-sm-12{
+    width: 80%;
 }
 
 .carousel-item img{
@@ -58,6 +73,8 @@ header{
 .card{
     height: 500px;
     width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .card,
@@ -79,8 +96,10 @@ section::before{
     height: 100%;
 
     background-image: url('https://img.freepik.com/fotos-gratis/lindo-ceu-noturno-com-estrelas-brilhantes_53876-16414.jpg?w=740&t=st=1698172231~exp=1698172831~hmac=ae3e67bf6f0130b9c1f0cfdc03f666a86c9533fc9b3cfbecf59365ed65840d9f');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+    
+
 }
 
 section .row{
