@@ -1,17 +1,25 @@
-body{
+@font-face {
+    font-family: Universo;
+    src: url(Universo/Demo_Fonts/Fontspring-DEMO-universo-bold.otf);
+}
+
+body {
+    color: #fff;
+    background-image: url(images/AdobeStock_469890000.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-item a {
     color: #fff;
 }
 
-.nav-item a{
-    color: #fff;
-}
-
-.nav-item a:hover{
+.nav-item a:hover {
     color: #a6a5a5;
 }
 
-header{
-    background-image: linear-gradient(to right, #0D0D34,#183457);
+header {
+    background-image: linear-gradient(to right, #0D0D34, #183457);
 
     position: sticky;
     top: 0;
@@ -19,13 +27,13 @@ header{
     z-index: 99;
 }
 
-.carousel-item img{
-    height: 300px;
+.carousel-item img {
+    height: 500px;
     object-fit: cover;
     object-position: center;
 }
 
-.card-img-overlay{
+.card-img-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     align-items: center;
     justify-content: center;
@@ -40,14 +48,14 @@ header{
 
 
 
-.card{
+.card {
     height: 100%;
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: 40px;
 }
 
-.card:hover{
+.card:hover {
     scale: 1.01;
 }
 
@@ -58,18 +66,18 @@ header{
     object-position: center;
 }
 
-.col-sm-12{
+.col-sm-12 {
     width: 50%;
     height: 30%;
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 300px;
     object-fit: cover;
     object-position: center;
 }
 
-.card{
+.card {
     height: 500px;
     width: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
@@ -77,27 +85,31 @@ header{
 }
 
 .card .btn {
-    background-image: linear-gradient(to right, #0D0D34,#183457);
+    background-image: linear-gradient(to right, #0D0D34, #183457);
     margin-top: 30px;
 
 }
 
 .card,
 article img,
-.card-img-overlay{
+.card-img-overlay {
     border-radius: 50px;
 }
 
-section{
+section {
+
     offset: -50%;
     height: 100vh;
     opacity: 0.95;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://img.freepik.com/fotos-gratis/lindo-ceu-noturno-com-estrelas-brilhantes_53876-16414.jpg?w=740&t=st=1698172231~exp=1698172831~hmac=ae3e67bf6f0130b9c1f0cfdc03f666a86c9533fc9b3cfbecf59365ed65840d9f');
-    background-repeat: no-repeat;
-    background-size: cover;
 
+    height: 100%;
+}
+
+section h1 {
+    font-family: Universo;
+    font-weight: bold;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 /* section::before{
@@ -116,6 +128,6 @@ section{
 
 } */
 
-section .row{
+section .row {
     padding-top: 30px;
 }
