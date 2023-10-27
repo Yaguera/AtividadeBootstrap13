@@ -63,7 +63,6 @@ header {
 
 .card {
     height: 100%;
-    cursor: pointer;
     transition: 0.3s;
     margin-bottom: 40px;
 }
