@@ -1,15 +1,20 @@
 @font-face {
     font-family: Universo;
-    src: url(Universo/Demo_Fonts/Fontspring-DEMO-universo-bold.otf);
+    src: url(lib/Demo_Fonts/Fontspring-DEMO-universo-bold.otf);
 }
 
 body {
     color: #fff;
-    background-image: url(images/AdobeStock_469890000.jpeg);
+    background-image: url(lib/images/AdobeStock_469890000.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.navbar-brand h2{
+    margin-bottom: 0;
+}
+
+.navbar-brand,
 .nav-item a {
     color: #fff;
 }
@@ -18,9 +23,17 @@ body {
     color: #a6a5a5;
 }
 
+.navbar-toggler{
+    filter: invert(100%);
+    outline: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+
 header {
     background-image: linear-gradient(to right, #0D0D34, #183457);
-
+    padding: 8px 0;
     position: sticky;
     top: 0;
     left: 0;
@@ -77,6 +90,23 @@ header {
     object-position: center;
 }
 
+.carousel-caption a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-caption h2{
+    transition: 0.5s;
+}
+
+.carousel-caption h2:hover{
+    scale: 1.1;
+} 
+
+.carousel-caption h2:focus{
+    scale: 1.1;
+} 
+
 .card {
     height: 500px;
     width: 100%;
@@ -130,4 +160,11 @@ section h1 {
 
 section .row {
     padding-top: 30px;
+}
+
+footer {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #0D0D34, #183457);
+    text-align: center;
+    padding: 16px;
 }
